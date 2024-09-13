@@ -1,0 +1,415 @@
+    html{
+        border: 0%;
+        margin: 0%;
+    }
+    body{
+    width: 100%;
+    height: auto;
+    border: 0%;
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #d7d7d7;
+}
+.container{
+    background: rgb(255, 255, 255);
+   
+    width: 100%;
+    height: 800px;
+    border: black solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+}
+.title{
+    height: 100px;
+}
+.players{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+}
+.VS{
+    margin-top: 60px;
+    font-size: 30px;
+}
+.player1, .player2{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    
+    
+    
+}
+#P1-score, #P2-score {
+    font-size: 40px;
+    text-align: center;
+    width: 50px;
+    border: black solid 1px;
+}
+
+img{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+#PLAY{
+    color: white;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(21, 0, 128);
+    cursor: pointer;
+}
+.result{
+    height: 70px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.PLAYERS-SCORE{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 250px;
+}
+#winner{
+    width: 70%;
+    height: 900px;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+#WIN{
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    margin-top: 120px;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ROUNDP{
+    position: absolute;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px ;
+}
+#ROUND{
+    text-align: center;
+    width: 20px;
+   
+}
+.pos{
+    position: absolute;
+    margin-top: 80px;
+}
+#P1,#P2{
+    width: 250px;
+    height: 250px;
+}
+
+/* Responsive design for different screen sizes */
+
+/* Mobile Phones (up to 600px) */
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        border: 0%;
+        margin: 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+    }
+    .container{
+        background: rgb(255, 255, 255);
+       
+        width: 100%;
+       
+        border: black solid 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+    }
+    .title{
+        
+        font-size: 20px;
+    }
+    .players{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+    }
+    .VS{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .player1, .player2{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        
+    }
+    #P1-score, #P2-score {
+        font-size: 15px;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        border: black solid 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #PLAY{
+        color: white;
+        margin-top: 10px;
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+        background-color: rgb(21, 0, 128);
+        cursor: pointer;
+    }
+    .result{
+        height: 20px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .PLAYERS-SCORE{
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 60px;
+    }
+    #winner{
+        width: 20%;
+        
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    #WIN{
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ROUNDP{
+        position: absolute;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px ;
+    }
+    #ROUND{
+        text-align: center;
+        width: 20px;
+       
+    }
+    .pos{
+        position: absolute;
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    h2{
+        font-size: 10px;
+    }
+    #click{
+        font-size: 10px;
+        
+    }
+    #P1,#P2{
+        width: 100px;
+    }
+}
+
+/* Tablets (600px - 1024px) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    body{
+        width: 100%;
+
+        border: 0%;
+        margin: 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+    }
+    .container{
+        background: rgb(255, 255, 255);
+        height: 800px;
+        width: 100%;
+        
+        border: black solid 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+    }
+    .title{
+        height: 100px;
+    }
+    .players{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 110px;
+    }
+    .VS{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .player1, .player2{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        
+    }
+    #P1-score, #P2-score {
+        font-size: 30px;
+        text-align: center;
+        width: 30px;
+        border: black solid 1px;
+    }
+    
+    img{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #PLAY{
+        color: white;
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        background-color: rgb(21, 0, 128);
+        cursor: pointer;
+    }
+    .result{
+        height: 70px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .PLAYERS-SCORE{
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 160px;
+    }
+    #winner{
+        width: 70%;
+        height: 900px;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    #WIN{
+        text-align: center;
+        width: 200px;
+        height: 100px;
+        margin-top: 100px;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ROUNDP{
+        position: absolute;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 70px ;
+    }
+    #ROUND{
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        border: #000000 1px solid;
+    }
+    .pos{
+        position: absolute;
+        margin-top: 65px;
+    }
+    #P1,#P2{
+        width: 190px;
+    }
+    
+}
+
+/* Small Desktops (1024px - 1440px) */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    
+}
+
+/* Large Desktops (1440px and above) */
+@media only screen and (min-width: 1440px) {
+    
+}
